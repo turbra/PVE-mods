@@ -118,7 +118,7 @@ function configure {
 					;;
 				"k10temp-"*)
 					CPU_ADDRESS="$(echo "$sensorOutput" | grep "$item" | sed 's/"//g;s/:{//;s/^\s*//')"
-					CPU_ITEM_PREFIX="Tccd"
+					CPU_ITEM_PREFIX="Tctl"
 					CPU_TEMP_CAPTION="Temp"
 					break
 					;;
